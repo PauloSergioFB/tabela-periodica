@@ -25,43 +25,93 @@
 }
 
 .non-metal {
-    color: #b4d264;
+    color: var(--non-metal);
+}
+
+.non-metal:hover {
+    text-shadow: 0 0 .20rem var(--non-metal), 0 0 .30rem var(--non-metal);
+    box-shadow: inset 0 0 .5rem var(--non-metal), 0 0 .5rem var(--non-metal);
 }
 
 .noble-gas {
-    color: #64b4e1;
+    color: var(--noble-gas);
+}
+
+.noble-gas:hover {
+    text-shadow: 0 0 .20rem var(--noble-gas), 0 0 .30rem var(--noble-gas);
+    box-shadow: inset 0 0 .5rem var(--noble-gas), 0 0 .5rem var(--noble-gas);
 }
 
 .alkali-metal {
-    color: #f5c864;
+    color: var(--alkali-metal);
+}
+
+.alkali-metal:hover {
+    text-shadow: 0 0 .20rem var(--alkali-metal), 0 0 .30rem var(--alkali-metal);
+    box-shadow: inset 0 0 .5rem var(--alkali-metal), 0 0 .5rem var(--alkali-metal);
 }
 
 .alkaline-earth-metal {
-    color: #f0e65a;
+    color: var(--alkaline-earth-metal);
+}
+
+.alkaline-earth-metal:hover {
+    text-shadow: 0 0 .20rem var(--alkaline-earth-metal), 0 0 .30rem var(--alkaline-earth-metal);
+    box-shadow: inset 0 0 .5rem var(--alkaline-earth-metal), 0 0 .5rem var(--alkaline-earth-metal);
 }
 
 .metalloid {
-    color: #6ec8be;
+    color: var(--metalloid);
+}
+
+.metalloid:hover {
+    text-shadow: 0 0 .20rem var(--metalloid), 0 0 .30rem var(--metalloid);
+    box-shadow: inset 0 0 .5rem var(--metalloid), 0 0 .5rem var(--metalloid);
 }
 
 .halogen {
-    color: #aae1ff;
+    color: var(--halogen);
+}
+
+.halogen:hover {
+    text-shadow: 0 0 .20rem var(--halogen), 0 0 .30rem var(--halogen);
+    box-shadow: inset 0 0 .5rem var(--halogen), 0 0 .5rem var(--halogen);
 }
 
 .other-metals {
-    color: #bed2d2;
+    color: var(--other-metals);
+}
+
+.other-metals:hover {
+    text-shadow: 0 0 .20rem var(--other-metals), 0 0 .30rem var(--other-metals);
+    box-shadow: inset 0 0 .5rem var(--other-metals), 0 0 .5rem var(--other-metals);
 }
 
 .transition-metal {
-    color: #f5afaf;
+    color: var(--transition-metal);
+}
+
+.transition-metal:hover {
+    text-shadow: 0 0 .20rem var(--transition-metal), 0 0 .30rem var(--transition-metal);
+    box-shadow: inset 0 0 .5rem var(--transition-metal), 0 0 .5rem var(--transition-metal);
 }
 
 .lanthanide {
-    color: #96e1e1;
+    color: var(--lanthanide);
+}
+
+.lanthanide:hover {
+    text-shadow: 0 0 .20rem var(--lanthanide), 0 0 .30rem var(--lanthanide);
+    box-shadow: inset 0 0 .5rem var(--lanthanide), 0 0 .5rem var(--lanthanide);
 }
 
 .actinide {
-    color: #e6bedc;
+    color: var(--actinide);
+}
+
+.actinide:hover {
+    text-shadow: 0 0 .20rem var(--actinide), 0 0 .30rem var(--actinide);
+    box-shadow: inset 0 0 .5rem var(--actinide), 0 0 .5rem var(--actinide);
 }
 
 body {
@@ -113,6 +163,16 @@ main {
     flex-direction: column;
 
     position: relative;
+
+    background-color: var(--body-bg);
+
+    transition: .4s;
+}
+
+.chemical-element:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .atomic-number{
