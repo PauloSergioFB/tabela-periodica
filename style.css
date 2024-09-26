@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --body-bg: #010101;
+
+    --non-metal: #b4d264;
+    --noble-gas: #64b4e1;
+    --alkali-metal: #f5c864;
+    --alkaline-earth-metal: #f0e65a;
+    --metalloid: #6ec8be;
+    --halogen: #aae1ff;
+    --other-metals: #bed2d2;
+    --transition-metal: #f5afaf;
+    --lanthanide: #96e1e1;
+    --actinide: #e6bedc;
+}
+
+.non-metal {
+    color: #b4d264;
+}
+
+.noble-gas {
+    color: #64b4e1;
+}
+
+.alkali-metal {
+    color: #f5c864;
+}
+
+.alkaline-earth-metal {
+    color: #f0e65a;
+}
+
+.metalloid {
+    color: #6ec8be;
+}
+
+.halogen {
+    color: #aae1ff;
+}
+
+.other-metals {
+    color: #bed2d2;
+}
+
+.transition-metal {
+    color: #f5afaf;
+}
+
+.lanthanide {
+    color: #96e1e1;
+}
+
+.actinide {
+    color: #e6bedc;
+}
+
+body {
+    width: 100vw;
+
+    padding: 20px;
+
+    color: #ffffff;
+    background-color: var(--body-bg);
+}
+
+.main-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 90px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.periodic-table {
+    width: calc((75px + 2px + 2px) * 18 + 4px * 17);
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+}
+
+/* Elemento químico */
+
+.chemical-element {
+    height: 75px;
+    width: 75px;
+
+    border: solid 2px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    position: relative;
+}
+
+.atomic-number{
+    font-size: 8px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+}
+
+.chemical-symbol{
+    font-size: 21px;
+}
+
+.element-name{
+    font-size: 11px;
+}
+
+.atomic-weight{
+    font-size: 9px;
+}
+
+.fill-space {
+    visibility: hidden;
+}
